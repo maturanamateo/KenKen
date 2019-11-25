@@ -1,6 +1,92 @@
-<!DOCTYPE html> 
-<html> 
-<body> 
-KenKen Description
-</body> 
+<!DOCTYPE html>
+<html>
+<h1>KenKen Generator</h1>
+<p>Created December 2018 - February 2019 as a Group Project for AP Computer Science A.  <a href = "https://github.com/maturanamateo/KenKen">GitHub Link</a></p> 
+<hr>
+<h2>KenKen Rules</h2> 
+Think about Sudoku. There is one property of a solved sudoku puzzle: it is a latin square. A latin square is a square of size x that has the numbers 1 - x in each column and row exactly once. However, instead of having 3x3 boxes, a KenKen puzzle has cages with operations and target numbers. If a cage of size 3 has 6+ (target number: 6, operation: addition) written, then the 3 numbers must add up to 6. This would be the numbers 1,2,3. The difficulty in solving this puzzle comes from having to maintain the latin square properties while also satisfying the target numbers of each individual cage. Common KenKen sizes range from 4 x 4 - 9 x 9. 
+<h2>Methodology</h2> 
+To be added... <br>
+<br>
+Prints out all elements in a cage, the operation, desired result, and the solution. 
+<h2>Sample Outputs</h2>
+<p><strong> 4 x 4 &nbsp;&nbsp;&nbsp;Difficulty: Easy </strong></p>
+Position Coordinates:  Row: 0 Col: 1 Row: 0 Col: 0 Row: 0 Col: 2  Operation: ADDITION Target Number: 7 <br>
+Position Coordinates:  Row: 2 Col: 1 Row: 3 Col: 1  Operation: SUBTRACTION Target Number: 1 <br>
+Position Coordinates:  Row: 2 Col: 3 Row: 2 Col: 2 Row: 3 Col: 3 Row: 3 Col: 2  Operation: MULTIPLICATION Target Number: 8 <br>
+Position Coordinates:  Row: 1 Col: 1 Row: 1 Col: 0  Operation: DIVISION Target Number: 4 <br>
+Position Coordinates:  Row: 2 Col: 0 Row: 3 Col: 0  Operation: SUBTRACTION Target Number: 1 <br>
+Position Coordinates:  Row: 1 Col: 2 Row: 0 Col: 3 Row: 1 Col: 3  Operation: MULTIPLICATION Target Number: 18 <br>
+<table>
+<tr> 
+<td>1&nbsp;&nbsp;&nbsp;</td><td>2&nbsp;&nbsp;&nbsp;</td><td>4&nbsp;&nbsp;&nbsp;</td><td>3&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr> 
+<td>4</td><td>1</td><td>3</td><td>2</td>
+</tr>
+<tr> 
+<td>3</td><td>4</td><td>2</td><td>1</td>
+</tr>
+<tr> 
+<td>2</td><td>3</td><td>1</td><td>4</td>
+</tr> 
+</table>
+<p><strong> 9 x 9 &nbsp;&nbsp;&nbsp;Difficulty: Hard </strong></p>
+Position Coordinates:  Row: 0 Col: 8 Row: 0 Col: 7 Row: 1 Col: 8 Row: 1 Col: 7  Operation: MULTIPLICATION Target Number: 270 <br>
+Position Coordinates:  Row: 1 Col: 4 Row: 1 Col: 3  Operation: SUBTRACTION Target Number: 5 <br>
+Position Coordinates:  Row: 2 Col: 8  Operation: null Target Number: 1 <br>
+Position Coordinates:  Row: 5 Col: 3 Row: 5 Col: 2 Row: 5 Col: 1  Operation: MULTIPLICATION Target Number: 240 <br>
+Position Coordinates:  Row: 8 Col: 6 Row: 8 Col: 5  Operation: MULTIPLICATION Target Number: 40 <br>
+Position Coordinates:  Row: 0 Col: 6 Row: 0 Col: 5 Row: 0 Col: 4 Row: 0 Col: 3  Operation: MULTIPLICATION Target Number: 210 <br>
+Position Coordinates:  Row: 6 Col: 3 Row: 7 Col: 3 Row: 7 Col: 2  Operation: MULTIPLICATION Target Number: 14 <br>
+Position Coordinates:  Row: 4 Col: 3 Row: 4 Col: 2 Row: 3 Col: 0 Row: 4 Col: 1 Row: 4 Col: 0  Operation: MULTIPLICATION Target Number: 240 <br>
+Position Coordinates:  Row: 6 Col: 7 Row: 5 Col: 7 Row: 6 Col: 8  Operation: MULTIPLICATION Target Number: 216 <br>
+Position Coordinates:  Row: 3 Col: 3 Row: 3 Col: 2  Operation: DIVISION Target Number: 3 <br>
+Position Coordinates:  Row: 4 Col: 5 Row: 4 Col: 4 Row: 5 Col: 5  Operation: MULTIPLICATION Target Number: 180 <br>
+Position Coordinates:  Row: 5 Col: 4 Row: 6 Col: 5 Row: 6 Col: 4  Operation: MULTIPLICATION Target Number: 54 <br>
+Position Coordinates:  Row: 2 Col: 7 Row: 3 Col: 8 Row: 3 Col: 7 Row: 4 Col: 7  Operation: MULTIPLICATION Target Number: 672 <br>
+Position Coordinates:  Row: 7 Col: 8 Row: 7 Col: 7 Row: 8 Col: 8 Row: 8 Col: 7  Operation: MULTIPLICATION Target Number: 240 <br>
+Position Coordinates:  Row: 5 Col: 0 Row: 6 Col: 0 Row: 7 Col: 1 Row: 7 Col: 0  Operation: MULTIPLICATION Target Number: 168 <br>
+Position Coordinates:  Row: 1 Col: 2 Row: 2 Col: 2 Row: 0 Col: 2  Operation: ADDITION Target Number: 15 <br>
+Position Coordinates:  Row: 1 Col: 6  Operation: null Target Number: 1 <br>
+Position Coordinates:  Row: 4 Col: 8 Row: 5 Col: 8  Operation: SUBTRACTION Target Number: 5 <br>
+Position Coordinates:  Row: 2 Col: 3 Row: 3 Col: 4 Row: 2 Col: 4 Row: 3 Col: 5  Operation: ADDITION Target Number: 24 <br>
+Position Coordinates:  Row: 7 Col: 4 Row: 8 Col: 4 Row: 8 Col: 3 Row: 8 Col: 2  Operation: ADDITION Target Number: 18 <br>
+Position Coordinates:  Row: 0 Col: 1 Row: 0 Col: 0 Row: 1 Col: 0  Operation: MULTIPLICATION Target Number: 128 <br>
+Position Coordinates:  Row: 8 Col: 1 Row: 8 Col: 0  Operation: MULTIPLICATION Target Number: 14 <br>
+Position Coordinates:  Row: 6 Col: 2 Row: 6 Col: 1  Operation: SUBTRACTION Target Number: 2 <br>
+Position Coordinates:  Row: 1 Col: 5 Row: 2 Col: 6 Row: 2 Col: 5  Operation: ADDITION Target Number: 16 <br>
+Position Coordinates:  Row: 7 Col: 6 Row: 7 Col: 5  Operation: SUBTRACTION Target Number: 3 <br>
+Position Coordinates:  Row: 1 Col: 1 Row: 2 Col: 1 Row: 2 Col: 0 Row: 3 Col: 1  Operation: MULTIPLICATION Target Number: 405 <br>
+Position Coordinates:  Row: 5 Col: 6 Row: 6 Col: 6 Row: 3 Col: 6 Row: 4 Col: 6  Operation: ADDITION Target Number: 16 <br>
+<br>
+<table>
+<tr>
+<td>8&nbsp;&nbsp;&nbsp;</td> <td>4&nbsp;&nbsp;&nbsp;</td> <td>6&nbsp;&nbsp;&nbsp;</td> <td>3&nbsp;&nbsp;&nbsp;</td> <td>7&nbsp;&nbsp;&nbsp;</td>  <td>2&nbsp;&nbsp;&nbsp;</td> <td>5&nbsp;&nbsp;&nbsp;</td> <td>1&nbsp;&nbsp;&nbsp;</td>  <td>9&nbsp;&nbsp;&nbsp;</td> 
+</tr>
+<tr>
+<td>4</td><td>9</td><td>2</td><td>8</td><td>3</td><td>7</td><td>1</td><td>6</td><td>5</td>
+</tr>
+<tr>
+<td>9</td><td>5</td><td>7</td><td>4</td><td>8</td><td>3</td><td>6</td><td>2</td><td>1</td>
+</tr>
+<tr>
+<td>5</td><td>1</td><td>3</td><td>9</td><td>4</td><td>8</td><td>2</td><td>7</td><td>6</td>
+</tr>
+<tr>
+<td>6</td><td>2</td><td>4</td><td>1</td><td>5</td><td>9</td><td>3</td><td>8</td><td>7</td>
+</tr>
+<tr>
+<td>1</td><td>6</td><td>8</td><td>5</td><td>9</td><td>4</td><td>7</td><td>3</td><td>2</td>
+</tr>
+<tr>
+<td>7</td><td>3</td><td>5</td><td>2</td><td>6</td><td>1</td><td>4</td><td>9</td><td>8</td>
+</tr>
+<tr>
+<td>3</td><td>8</td><td>1</td><td>7</td><td>2</td><td>6</td><td>9</td><td>5</td><td>4</td>
+</tr> 
+<tr>
+<td>2</td><td>7</td><td>9</td><td>6</td><td>1</td><td>5</td><td>8</td><td>4</td><td>3</td>
+</tr>   
+</table>  
 </html>
